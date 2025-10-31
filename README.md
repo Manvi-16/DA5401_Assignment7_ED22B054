@@ -49,7 +49,7 @@ Classify land cover types (6 classes) from satellite image data with high-dimens
 - SVC and KNN provide best separability (ROC-AUC close to 1).
 - Dummy gives random separability (AUC = 0.5), clear lower bound.
 - Decision Tree underperforms, potentially due to lack of depth or overfitting.
-- High ROC-AUC does not always translate to high average precision (see PRC next).
+- High ROC-AUC does not always translate to high average precision.
 
 ***
 
@@ -70,7 +70,7 @@ Classify land cover types (6 classes) from satellite image data with high-dimens
 - Macro-averaging (vs. weighted) ensures minority classes are not overshadowed, critical for satellite data with rare cover types.
 - PRC is stricter than ROC when true positives are rare; strong PRC indicates real reliability.
 
-**Extra:** Curve plots are in the notebook, visually confirming tabular trends.
+
 
 ***
 
@@ -98,10 +98,4 @@ Classify land cover types (6 classes) from satellite image data with high-dimens
 - The DummyClassifier with rare constant is effective for testing the interpretation of ROC/PRC metrics near theoretical minimums.
 - All strong classifiers supplement their quantitative lead with clean, tight ROC and PRC curves in the final plots.
 
-***
 
-
-
-***
-
-Let me know if you want even more observation bullets for a particular section or a different arrangement!
